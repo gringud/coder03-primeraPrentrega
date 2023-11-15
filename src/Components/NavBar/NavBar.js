@@ -5,6 +5,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { TiShoppingCart } from "react-icons/ti";
 
+import ItemListContainer from "./ItemListContainer";
+
 export default function NavBar(){
     console.log("object");
 
@@ -27,7 +29,9 @@ export default function NavBar(){
                     <Nav.Link eventKey={2} href="#cart">
                     <TiShoppingCart className="fs-1"/>
                     </Nav.Link>
-                    <Nav.Link href="#deets">{1}</Nav.Link>
+                    <Nav.Link href="#deets">
+                        <ItemListContainer greeting="1"/>
+                    </Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
             </Container>
